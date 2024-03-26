@@ -5,28 +5,20 @@ class countryStateCityData {
         this.cities = require('./data/cities.json');
     }
 
-    getCountryByCode(countryCode) {
-        return this.countries.find(country => country.code === countryCode);
+    getCountryById(countryId) {
+        return this.countries.find(country => country.id === countryId);
     }
 
-    getStateByCode(stateCode) {
-        return this.states.find(state => state.code === stateCode);
+    getStateByCountryId(countryId) {
+        return this.states.filter(state => state.country_id === countryId);
     }
 
-    getCitiesByState(stateCode) {
-        return this.cities.filter(city => city.state_code === stateCode);
+    getCitiesByStateId(stateId) {
+        return this.cities.filter(city => city.state_id === stateId);
     }
 
     getAllCountries() {
         return this.countries;
-    }
-
-    getAllStates() {
-        return this.states;
-    }
-
-    getAllCities() {
-        return this.cities;
     }
 }
 
