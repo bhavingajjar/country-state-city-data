@@ -25,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/bhavingajjar/country-state-city-data/issues"
   },
-  "homepage": "https://github.com/bhavingajjar/country-state-city-data#readme",
-  "publishConfig": {
-    "@bhavingajjar:registry": "https://npm.pkg.github.com"
-  }
+  "homepage": "https://github.com/bhavingajjar/country-state-city-data#readme"
 }
