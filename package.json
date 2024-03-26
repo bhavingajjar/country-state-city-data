@@ -1,0 +1,29 @@
+{
+  "name": "country-state-city-data",
+  "version": "1.0.0",
+  "description": "Comprehensive JSON dataset containing information about countries, states/provinces, and cities worldwide. This dataset includes details such as country codes, state/province codes, city names, and their respective codes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavingajjar/country-state-city-data.git"
+  },
+  "keywords": [
+    "country",
+    "state",
+    "city",
+    "data",
+    "JSON",
+    "dataset",
+    "worldwide",
+    "geography"
+  ],
+  "author": "Bhavin Gajjar (https://github.com/bhavingajjar)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhavingajjar/country-state-city-data/issues"
+  },
+  "homepage": "https://github.com/bhavingajjar/country-state-city-data#readme"
+}
