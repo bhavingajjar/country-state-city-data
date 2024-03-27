@@ -251,7 +251,7 @@
     "country_code": "TD",
     "phone_code": "+235"
   },
-    {
+  {
     "id": 43,
     "name": "chile",
     "country_code": "CL",
@@ -1247,7 +1247,7 @@
     "country_code": "SR",
     "phone_code": "+597"
   },
-    {
+  {
     "id": 209,
     "name": "svalbard and jan mayen islands",
     "country_code": "SJ",

@@ -49,7 +49,7 @@ class countryStateCityData {
     getAllCountries() {
         return this.countries;
     }
-    
+
     /**
      * This function searches for a country in the countries JSON array,
      * where the country_code property of each country matches the
@@ -81,6 +81,7 @@ class countryStateCityData {
         // search for a country in the countries array where the phone_code property matches the strippedPhoneCode
         return this.countries.find(country => country.phone_code.toLowerCase() === strippedPhoneCode || country.phone_code === phoneCode);
     }
+
     /**
      * This function returns an array of countries from the countries JSON
      * array where the phone_code property of each country matches the
