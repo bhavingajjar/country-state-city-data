@@ -5,22 +5,51 @@ class countryStateCityData {
         this.cities = require('./data/cities.json');
     }
 
+    /**
+     * This function returns a country object from the countries JSON array,
+     * where the id property of the country matches the countryId argument.
+     * If no country is found, undefined is returned.
+     *
+     * @param {number} countryId - id of the country to search for
+     * @returns {object|undefined} country object if found, undefined otherwise
+     */
     getCountryById(countryId) {
         return this.countries.find(country => country.id === countryId);
     }
 
+    /**
+     * This function returns an array of states from the states JSON array,
+     * where the country_id property of each state matches the countryId argument.
+     * If no states are found, an empty array is returned.
+     *
+     * @param {number} countryId - id of the country to search for
+     * @returns {array} array of state objects if found, empty array otherwise
+     */
     getStateByCountryId(countryId) {
         return this.states.filter(state => state.country_id === countryId);
     }
 
+    /**
+     * This function returns an array of cities from the cities JSON array,
+     * where the state_id property of each city matches the stateId argument.
+     * If no cities are found, an empty array is returned.
+     *
+     * @param {number} stateId - id of the state to search for
+     * @returns {array} array of city objects if found, empty array otherwise
+     */
     getCitiesByStateId(stateId) {
         return this.cities.filter(city => city.state_id === stateId);
     }
 
+    /**
+     * This function returns all countries from the countries JSON array.
+     *
+     * @returns {array} array of all country objects
+     */
     getAllCountries() {
         return this.countries;
     }
-
+    
     /**
      * This function searches for a country in the countries JSON array,
      * where the country_code property of each country matches the
